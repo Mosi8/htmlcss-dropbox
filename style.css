@@ -149,7 +149,8 @@ main{
 /* fine prima sezione  */
 
 .seconda-sezione,
-.terza-sezione{
+.terza-sezione,
+.quarta-sezione{
     width: 75%;
     margin: 0 auto;
 }
@@ -174,8 +175,10 @@ main{
     float: left;
     width: 30%;
 }
-
-.tre-colonne::after{
+/* clearfix  */
+.tre-colonne::after,
+.terza-sezione::after,
+.quarta-sezione::after{
     content: "";
     display: table;
     clear: both;
@@ -308,13 +311,14 @@ hr{
 }
 
 #foto-grande{
-    display: inline-block;
     float: left;
     width: 55%;
     margin-right: 7%;
 }
 
-#foto-grande img{
+#foto-grande img,
+.colonna-foto img,
+.colonna2-foto img{
     width: 100%;
 }
 
@@ -340,7 +344,77 @@ hr{
     padding: 7px 20px;
     color: #000;
 }
-/* footer{
-    height: 100vh;
-    background-color: cadetblue;
-} */
+/* main sezione 6 foto  */
+.quarta-sezione{
+    margin: 80px auto;
+}
+
+.colonna-foto,
+.colonna2-foto{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: left;
+    width: 32%;
+}
+
+.colonna2-foto{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.colonna-foto h3,
+.colonna2-foto h3{
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.colonna-foto p,
+.colonna2-foto p{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.quinta-sezione{
+    width: 75%;
+    margin: 80px auto;
+    padding-bottom: 50px;
+}
+
+.quinta-sezione div{
+    width: 32%;
+    padding-bottom: 30px;
+}
+
+.quinta-sezione div h3{
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.quinta-sezione span a{
+    text-decoration: underline;
+    color: rgb(5, 67, 255);
+}
+
+
+
+
+
+
+
+/* footer  */
+footer{
+    background-color: #000;
+    margin-top: 30px;
+}
+
+#fine-pagina{
+    width: 85%;
+    height: 400px;
+    margin: 50px auto;
+    background-color: aqua;
+}
+
+.col-foot{
+    float: left;
+    width: 20%;
+}
