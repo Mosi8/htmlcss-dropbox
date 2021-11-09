@@ -461,7 +461,7 @@ hr{
     float: left;
 }
 
-#logo-1 img,
+
 #logo-2 img,
 #logo-3 img,
 #logo-4 img,
@@ -477,8 +477,18 @@ hr{
     transform: translate(-50%, -50%);
 }
 
+#logo-1 img{
+    width: 55%;
+    filter: invert(1);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #logo-1{
     background-color: rgb(146, 204, 137);
+    border: 10px solid rgba(255, 255, 255, 0.4);
 }
 #logo-2{
     background-color: rgb(79, 0, 32);
